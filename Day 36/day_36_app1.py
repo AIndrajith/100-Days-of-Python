@@ -1,7 +1,7 @@
 from flask import Flask
 
 # create Flask app
-app = Flask(__name__)
+app = Flask(__name__) # creates an instance of the flask app
 
 # Defime a Route 
 @app.route('/')
