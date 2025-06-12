@@ -42,13 +42,6 @@ def read_entry():
     except FileNotFoundError:
         print("Entry not Found.")
 
-
-
-
-
-
-
-
 # Generate and save a key
 def generate_key():
     key = Fernet.generate_key()
