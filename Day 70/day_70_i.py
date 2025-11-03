@@ -1,0 +1,14 @@
+# Reading and Handling CSV/Excel 
+
+import pandas as pd
+
+def load_file(file_path):
+    if file_path.endswith(".csv"):
+        return pd.read_csv(file_path)
+    elif file_path.endswith(".xlsx"):
+        return pd.read_excel(file_path)
+    else:
+        raise ValueError("Unsupported file format. Please provide a .csv or .xlsx file.")
+    
+data = load_file("sample_data.csv")
+print(data.head())
